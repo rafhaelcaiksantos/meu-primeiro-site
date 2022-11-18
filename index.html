@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+
+    body{
+    font-family: tahoma, Arial,  sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+    #principal{
+        width: 1024px;
+        margin: 20px auto;
+    }
+    .header-top{
+        height: 120px;
+        background-color: red;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .logotipo{
+        height: 100%;
+        margin: 0px 0 0 0 ;
+    }
+
+    .header-nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+
+    .header-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-nav li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 15px 0 0;
+        padding: 15px;
+    }
+
+    .header-nav a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .header-nav a:hover{
+        color:gray;
+    }
+
+    .portifolio{
+        padding: 50px 100px;
+        text-align: center;
+    }
+
+    .portifolio h1{
+        font-size: 36px;
+        color: red;
+    }
+
+    .portifolio p{
+        font-size: 16px;
+        line-height: 2;
+    }
+    .gallery{
+        color: red;
+        padding: 0 100px 50px 100px;
+        overflow: auto;
+    }
+
+    .gallery-card{
+        width: 32%;
+        float: left;
+        text-align: center;
+    }
+
+    .imgmenu{
+    width: 200px;
+    }
+
+    .imgmain{
+    width: 1024px;
+    }
+
+    .gallery-text{
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .about{
+        background-color: red;
+        padding: 100px;
+        color: white;
+        background-repeat: no-repeat;
+    }
+
+    .about h2{
+        text-transform: uppercase;
+        font-size: 30px;
+        text-shadow: 5px 5px 5px rgb(12, 11, 11);
+     }
+
+     .about p{
+        line-height: 1.5;
+        width: 70%;
+        text-shadow: 5px 5px 5px rgb(12, 11, 11);
+     }
+
+     #contact{
+        margin: 50px 0;
+     }
+
+     #contact address{
+        font-size: 26px;
+        text-transform: uppercase;
+        font-style: normal;
+        text-align: center;
+        color: red;
+        font-weight: bold;
+     }
+       .maps{
+        width: 100%;
+        height: 450px;
+        margin-top: 25px;
+        text-align: center;
+     }
+     .maps iframe{
+            width: 100%;
+     }
+     footer{
+        background-color: red;
+        padding: 25px;
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 5px;
+     }
+
+    </style>
+    <title>Titan 160 </title>
+</head>
+<body>
+    <div id= "principal">
+
+        <header class="header-top">
+            <img class="logotipo"
+            src="data:image/png;base64,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" alt="Logotipo gato">
+            <nav class="header-nav">
+          <ul>
+              <li><a href="https://github.com/CleberPrestes">Portifolio</a></li>
+              <li><a href="sobre.html">Sobre nós</a></li>
+              <li><a href="contato.html">Contato</a></li>
+          </ul>
+          </nav>
+        </header>
+
+        <img class="imgmain" src="https://www.honda.com.br/motos/sites/hda/files/styles/desktop_840x503/public/2022-08/CG%20Titan%20-%20Prata%20meta%CC%81lico%20-%20Lateral_2.png?itok=LvWFJoWK%201x" alt="Gato amarelo">
+        <article class="portifolio">
+            <h1>160 Titan</h1>
+            <h2>História da Honda</h2>
+            <p>A crença no poder dos sonhos, traduzida no slogan mundial da marca Honda – The Power of Dreams – é um dos principais legados deixados pelo criador da empresa, Soichiro Honda. Homem à frente de seu tempo, desenvolveu novos conceitos de mobilidade. Seguindo os passos do fundador, a Honda acredita que o sonho é a força criativa, capaz de produzir ideias inovadoras. </p>
+            <p>A companhia procura, por meio de seus produtos e serviços, proporcionar experiências diferenciadas e seguras às pessoas. Também acredita que apoiar colaboradores e comunidades na realização de seus desejos é uma forma de construir um futuro melhor.</p>
+            <h2>Tipos de Motos</h2>
+            <p>Os apaixonados por duas rodas têm motivos para nunca enjoar. São muitos os tipos de motos e modelos disponíveis no mercado.
+
+São mais de vinte categorias e, apesar de nem todas emplacarem – literalmente – no Brasil, ainda assim há uma</p>
+            <p>Pensadas para quem gosta de estrada, seja de asfalto ou de terra. As Big Trail são motos grandes que oferecem tecnologia e velocidade para trechos longos, com diferenciais que variam de acordo com o gosto do piloto. São, portanto, usadas até mesmo em competições de motocross. Vale lembrar que as usadas para fins esportivos, tem muitas adaptações.</p>
+        </article>
+        <section class="gallery">
+            <article class="gallery-card">
+                <img class="imgmenu" src="https://www.honda.com.br/motos/sites/hda/files/styles/desktop_840x503/public/2022-08/CG%20Titan%20-%20Vermelho%20-%20Lateral_1.png?itok=o2ra6kaF%201x" alt="">
+                <p class="gallery-title"></p>
+                <p class="gallery-text">
+                    Titan 160 Vermelha
+              </p>
+            </article>
+            <article class="gallery-card">
+                <img class="imgmenu" src="https://img.olx.com.br/images/82/821209574521234.jpg" alt="">
+                <p class="gallery-title"></p>
+                <p class="gallery-text">
+                    Titan 160 Dourada
+                </p>
+            </article>
+            <article class="gallery-card">
+                <img class="imgmenu" src="https://www.honda.com.br/motos/sites/hda/files/styles/desktop_840x503/public/2022-08/CG%20Titan%20-%20Cinza%20-%20Lateral_2.png?itok=jUOgDNAF%201x" alt="">
+                <p class="gallery-title"></p>
+                <p class="gallery-text">
+                    Titan 160 Cinza
+                </p>
+            </article>
+        </section>
+        <article class="about">
+            <h2>Tudo sobre moto</h2>
+            <p>Descobrir tudo sobre motos e adquirir um veículo desse tipo pode ser o caminho para se livrar de dois grandes problemas de quem vive nas grandes cidades.
+
+O primeiro são os engarrafamentos, que tornam qualquer trajeto um verdadeiro teste de paciência.
+
+Os congestionamentos ocorrem porque há muitos carros trafegando com apenas uma ou duas pessoas, mesmo podendo levar até cinco.
+
+O outro problema que a pessoa que deseja saber tudo sobre motos está pensando em evitar, ou melhor, em amenizar, é a despesa com combustível.</p>
+            <p>Os veículos de duas rodas são muito mais econômicos do que os automóveis. O que é especialmente importante atualmente, com o preço da gasolina nas alturas.
+
+Quem costuma percorrer longas distâncias todos os dias, então, vai gastar um valor muito mais baixo por mês para abastecer se optar por fazer o trajeto de moto.
+
+</p>
+        </article>
+        <div id="contact">
+            <address>
+                Ligue me para saber mais sobre motos honda
+                <br>
+                95954818
+            </address>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28878.127840569763!2d-49.134934015860715!3d-25.21111332319534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcc153d5264611%3A0xdd193cb59e9f8561!2sBocai%C3%BAva%20do%20Sul%2C%20PR%2C%2083450-000!5e0!3m2!1spt-BR!2sbr!4v1622641309172!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <footer>
+            Autor:
+            <br>
+             Rafhael Caik N:37
+             Diego Caron N:09
+             Serie:1E
+        </footer>
+    </div>
+</body>
+</html>
